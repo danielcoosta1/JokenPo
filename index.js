@@ -56,7 +56,7 @@ function reiniciarJogo(){
         suaPontuacao.innerHTML = 0;
         alexaPontuacao.innerHTML = 0;
         textoVitoria.style.display = "none";
-    }, 4000);
+    }, 3000);
     
     
 }
