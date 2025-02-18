@@ -2,6 +2,8 @@ const pedra = document.getElementById("pedra");
 const papel = document.getElementById("papel");
 const tesoura = document.getElementById("tesoura");
 
+const textoVitoria = document.querySelector(".textoVitoria");
+
 const alexaButton = document.querySelector(".pontuação__alexa-button");
 
 const reiniciar = document.querySelector(".botao-reiniciar");
@@ -18,6 +20,7 @@ desligarAlexaButton();
 
 function desligarAlexaButton(){
     alexaButton.style.display = "none";
+    
 }
 
 function escolherAleatoria(var1, var2, var3) {
@@ -36,19 +39,26 @@ function escolherAleatoria(var1, var2, var3) {
 
 
 function reiniciarJogo(){
+    
     alexaButton.style.display = "none";
     if(pontuacaoAlexa>pontuacaoUsuario){
-        alert("Você perdeu para Alexa, quer ganhar?");
+        textoVitoria.innerHTML = "Você perdeu para alexa! &#x1F61E";
     } 
     else if(pontuacaoAlexa < pontuacaoUsuario) {
-        alert("Parabéns!!! Você ganhou de Alexa");
+        textoVitoria.innerHTML = "Você ganhou da alexa!!! &#x1F601";
     } else {
-        alert("Deu empate! Quer ganhar da alexa?")
+        textoVitoria.innerHTML = "Deu empate! &#x1F601";
     }
-    pontuacaoAlexa = 0;
-    pontuacaoUsuario = 0;
-    suaPontuacao.innerHTML = 0;
-    alexaPontuacao.innerHTML = 0;
+
+    setTimeout(() => {
+        pontuacaoAlexa = 0;
+        pontuacaoUsuario = 0;
+        suaPontuacao.innerHTML = 0;
+        alexaPontuacao.innerHTML = 0;
+        textoVitoria.style.display = "none";
+    }, 4000);
+    
+    
 }
 
 function gameAlexa(alexa){
@@ -69,7 +79,7 @@ function gameAlexa(alexa){
 }
 
 function compararJogadaPedra(){
-
+    textoVitoria.style.display = "block";
     let alexa = escolherAleatoria("pedra","papel","tesoura");
     gameAlexa(alexa);
     console.log(alexa);
@@ -79,27 +89,31 @@ function compararJogadaPedra(){
             pontuacaoUsuario++;
             suaPontuacao.innerHTML = pontuacaoUsuario;
             alexaPontuacao.innerHTML = pontuacaoAlexa;
-            console.log("empate");
-            console.log(pontuacaoAlexa);
-            console.log(pontuacaoUsuario);
+            textoVitoria.innerHTML = "Empatou! &#x1F611";
+            textoVitoria.style.color ="#1C1C1C";
+            
+            
             break;
         case "papel":
             pontuacaoAlexa++;
             alexaPontuacao.innerHTML = pontuacaoAlexa;
-            console.log("Alexa venceu")
+            textoVitoria.innerHTML = "Alexa venceu! &#x1F62D";
+            textoVitoria.style.color = "#800000";
             break;
     
         default:
             pontuacaoUsuario++;
             suaPontuacao.innerHTML = pontuacaoUsuario;
-            console.log("Você venceu!")
+            textoVitoria.innerHTML = "Você venceu! &#x1F600"
+            textoVitoria.style.color = "#006400";
+            
             break;
     }
 }
 
 
 function compararJogadaPapel(){
-    
+    textoVitoria.style.display = "block";
     let alexa = escolherAleatoria("pedra","papel","tesoura");
     gameAlexa(alexa);
     console.log(alexa);
@@ -107,27 +121,30 @@ function compararJogadaPapel(){
         case "pedra":
             pontuacaoUsuario++;
             suaPontuacao.innerHTML = pontuacaoUsuario;
+            textoVitoria.innerHTML = "Você venceu! &#x1F600"
+            textoVitoria.style.color = "#006400";
             
-            console.log("você venceu");
             break;
         case "papel":
             pontuacaoAlexa++;
             pontuacaoUsuario++;
             suaPontuacao.innerHTML = pontuacaoUsuario;
             alexaPontuacao.innerHTML = pontuacaoAlexa;
-            console.log("empate");
+            textoVitoria.innerHTML = "Empatou! &#x1F611";
+            textoVitoria.style.color ="#1C1C1C";
             break;
     
         default:
             pontuacaoAlexa++;
             alexaPontuacao.innerHTML = pontuacaoAlexa;
-            console.log("Alexa venceu!");
+            textoVitoria.innerHTML = "Alexa venceu! &#x1F62D";
+            textoVitoria.style.color = "#800000";
             break;
     }
 }
 
 function compararJogadaTesoura(){
-    
+    textoVitoria.style.display = "block";
     let alexa = escolherAleatoria("pedra","papel","tesoura");
     gameAlexa(alexa);
     console.log(alexa);
@@ -135,12 +152,14 @@ function compararJogadaTesoura(){
         case "pedra":
             pontuacaoAlexa++;
             alexaPontuacao.innerHTML = pontuacaoAlexa;
-            console.log("Alexa venceu!");
+            textoVitoria.innerHTML = "Alexa venceu! &#x1F62D";
+            textoVitoria.style.color = "#800000";
             break;
         case "papel":
             pontuacaoUsuario++;
             suaPontuacao.innerHTML = pontuacaoUsuario;
-            console.log("você venceu");
+            textoVitoria.innerHTML = "Você venceu! &#x1F600"
+            textoVitoria.style.color = "#006400";
             break;
     
         default:
@@ -148,7 +167,9 @@ function compararJogadaTesoura(){
             pontuacaoUsuario++;
             suaPontuacao.innerHTML = pontuacaoUsuario;
             alexaPontuacao.innerHTML = pontuacaoAlexa;
-            console.log("empate");
+            textoVitoria.innerHTML = "Empatou! &#x1F611";
+            textoVitoria.style.color ="#1C1C1C";
+
             break;
     }
 }
