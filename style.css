@@ -1,0 +1,33 @@
+@import url("./assets/styles/main.css");
+@import url('https://fonts.googleapis.com/css2?family=Coustard:wght@400;900&display=swap');
+
+:root {
+    --fonte-texto: "Coustard", serif;
+
+    --cor-titulo: #000000;
+    --cor-texto: #1C1C1C;
+
+    --cor-button-pedra: #6959CD;
+    --cor-button-papel: #00FA9A;
+    --cor-button-tesoura:#00FFFF;
+
+    --cor-destaque-sua: #006400;
+    --cor-destaque-alexa: #800000;
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: var(--fonte-texto);
+    background: linear-gradient(135deg, #6e8efb, #4a6cf7, #3b5bdb, #2c3e50);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

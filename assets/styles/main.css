@@ -1,0 +1,84 @@
+.container {
+    
+    height: fit-content;
+    width: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    
+    background-color:#B0C4DE;
+    border-radius: 20px;
+    padding: 2em;
+
+}
+
+/* TITULO */
+
+
+.titulo-principal{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+/* BOTÕES */
+
+.buttons {
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+
+    margin-bottom: 1.5em;
+}
+
+.button{
+    font-size: 3rem;
+    padding: .5em;
+}
+
+.button-pedra{
+    background-color: var(--cor-button-pedra);
+    border: none;
+    border-radius: 10px;
+}
+
+.button-papel{
+    background-color: var(--cor-button-papel);
+    border: none;
+    border-radius: 10px;
+}
+
+.button-tesoura{
+    background-color: var(--cor-button-tesoura);
+    border: none;
+    border-radius: 10px;
+}
+
+/* PONTUAÇÃO */
+
+.pontuação{
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    
+}
+
+.pontuação__texto{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.pontuação__texto_destaque-sua{
+    color: green;
+}
+
+.pontuação__texto_destaque-alexa{
+    color: red;
+}
+
+
+
