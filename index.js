@@ -1,7 +1,12 @@
 const pedra = document.getElementById("pedra");
 const papel = document.getElementById("papel");
 const tesoura = document.getElementById("tesoura");
+
+const alexaButton = document.querySelector(".pontuação__alexa-button");
+
 const reiniciar = document.querySelector(".botao-reiniciar");
+
+
 
 let pontuacaoAlexa = 0;
 let pontuacaoUsuario = 0;
@@ -9,6 +14,11 @@ let pontuacaoUsuario = 0;
 let suaPontuacao = document.querySelector(".pontuação__texto_destaque-sua");
 let alexaPontuacao = document.querySelector(".pontuação__texto_destaque-alexa");
 
+desligarAlexaButton();
+
+function desligarAlexaButton(){
+    alexaButton.style.display = "none";
+}
 
 function escolherAleatoria(var1, var2, var3) {
     // Gera um número aleatório entre 0 e 2
@@ -26,6 +36,7 @@ function escolherAleatoria(var1, var2, var3) {
 
 
 function reiniciarJogo(){
+    alexaButton.style.display = "none";
     if(pontuacaoAlexa>pontuacaoUsuario){
         alert("Você perdeu para Alexa, quer ganhar?");
     } 
@@ -40,10 +51,27 @@ function reiniciarJogo(){
     alexaPontuacao.innerHTML = 0;
 }
 
+function gameAlexa(alexa){
+    alexaButton.style.display = "block";
+
+    if(alexa == "pedra"){     
+        alexaButton.innerHTML = "&#x1F44A";
+        alexaButton.style.backgroundColor = " #6959CD";
+        
+    } else if(alexa =="tesoura"){
+        alexaButton.innerHTML = "&#x270C";
+        alexaButton.style.backgroundColor = "#00FFFF";
+    } else {
+        alexaButton.innerHTML = "&#x270B";
+        alexaButton.style.backgroundColor = "#00FA9A";
+    }
+   
+}
 
 function compararJogadaPedra(){
 
     let alexa = escolherAleatoria("pedra","papel","tesoura");
+    gameAlexa(alexa);
     console.log(alexa);
     switch (alexa) {
         case "pedra":
@@ -73,6 +101,7 @@ function compararJogadaPedra(){
 function compararJogadaPapel(){
     
     let alexa = escolherAleatoria("pedra","papel","tesoura");
+    gameAlexa(alexa);
     console.log(alexa);
     switch (alexa) {
         case "pedra":
@@ -100,6 +129,7 @@ function compararJogadaPapel(){
 function compararJogadaTesoura(){
     
     let alexa = escolherAleatoria("pedra","papel","tesoura");
+    gameAlexa(alexa);
     console.log(alexa);
     switch (alexa) {
         case "pedra":
@@ -128,3 +158,6 @@ pedra.addEventListener("click", compararJogadaPedra);
 papel.addEventListener("click", compararJogadaPapel);
 tesoura.addEventListener("click", compararJogadaTesoura);
 reiniciar.addEventListener("click", reiniciarJogo);
+
+
+

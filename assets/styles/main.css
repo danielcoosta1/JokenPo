@@ -1,7 +1,6 @@
 .container {
     
-    height: fit-content;
-    width: fit-content;
+   
 
     display: flex;
     flex-direction: column;
@@ -19,8 +18,9 @@
 
 
 .titulo-principal{
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-weight: 700;
+    
 }
 
 /* BOTÕES */
@@ -66,15 +66,21 @@
 /* PONTUAÇÃO */
 
 .pontuação{
+    
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    gap: .5em;
+    
+    
+    justify-content: space-between;
+    align-items: center;
+    
     
 }
 
 .pontuação__texto{
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 400;
+    
 }
 
 .pontuação__texto_destaque-sua{
@@ -84,6 +90,28 @@
 .pontuação__texto_destaque-alexa{
     color: red;
 }
+
+.pontuação__alexa{
+    display: flex;
+    gap: .5em;
+    align-items: center;
+    margin-right: 2em;
+    
+}
+
+.pontuação__alexa-button{
+    font-size: 1.5rem;
+    padding: .5em;
+    
+    border: none;
+    border-radius: 10px;
+    background-color: none;
+
+}
+
+
+
+
 
 /* BOTÃO REINICIAR */
 
