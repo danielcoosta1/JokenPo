@@ -3,8 +3,8 @@
 <p>Projeto com foco em exercitar conceitos JS: Construção de páginas dinâmicas no JavaScript</p>
 
 <p> Projeto com algumas alteraçõs autorais:</br>
-    Botão reiniciar jogo;</br>
-    Alert para comparar e ver quem ganhou o jogo, Alexa ou o usuário; </br>
+    - Botão reiniciar jogo;</br>
+    - Alert para comparar e ver quem ganhou o jogo, Alexa ou o usuário; </br>
     </br>
 </p>
 <h2>Linguagens usadas:</h2>
