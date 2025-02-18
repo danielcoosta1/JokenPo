@@ -1,6 +1,7 @@
 const pedra = document.getElementById("pedra");
 const papel = document.getElementById("papel");
 const tesoura = document.getElementById("tesoura");
+const reiniciar = document.querySelector(".botao-reiniciar");
 
 let pontuacaoAlexa = 0;
 let pontuacaoUsuario = 0;
@@ -22,6 +23,15 @@ function escolherAleatoria(var1, var2, var3) {
         return var3;
     }
 }
+
+
+function reiniciarJogo(){
+    pontuacaoAlexa = 0;
+    pontuacaoUsuario = 0;
+    suaPontuacao.innerHTML = 0;
+    alexaPontuacao.innerHTML = 0;
+}
+
 
 function compararJogadaPedra(){
 
@@ -109,3 +119,4 @@ function compararJogadaTesoura(){
 pedra.addEventListener("click", compararJogadaPedra);
 papel.addEventListener("click", compararJogadaPapel);
 tesoura.addEventListener("click", compararJogadaTesoura);
+reiniciar.addEventListener("click", reiniciarJogo);
