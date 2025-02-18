@@ -2,13 +2,13 @@
 <p>Projeto ficticio da plataforma DevClub</p>
 <p>Projeto com foco em exercitar conceitos JS: Construção de páginas dinâmicas no JavaScript</p>
 
-<h2>Alterações próprias</h2>
+<h1>Alterações próprias</h1>
 <p>Mudei e acrescentei algumas coisas do projeto original</p>
 <p>Acrescentei o botão reiniciar e sua dinâmica</p>
 <p>Acrescentei a informação de qual foi a escolha de Alexa(Aleatoria)</p>
 <p>Adicionei e fiz o meu próprio estilo no css, assim como a semântica do HTML</p>
 
-<h2>Linguagens usadas:</h2>
+<h1>Linguagens usadas:</h1>
 <p>
  
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> </br>
