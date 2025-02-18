@@ -63,6 +63,14 @@
     border-radius: 10px;
 }
 
+/* TEXTO DE QUEM GANHOU/EMPATOU */
+
+.textoVitoria{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+
 /* PONTUAÇÃO */
 
 .pontuação{
