@@ -38,6 +38,11 @@
 .button{
     font-size: 3rem;
     padding: .5em;
+    transition: opacity 0.5 ease-in-out;
+}
+
+.button:hover{
+    opacity: 0.7;
 }
 
 .button-pedra{
@@ -80,5 +85,40 @@
     color: red;
 }
 
+/* BOTÃO REINICIAR */
+
+.reiniciar{
+    display: flex;
+    justify-content: center;
+    margin: 1em auto;
+}
 
 
+/* Estilo base do botão */
+.botao-reiniciar {
+    width: 80%;
+    background-color: #6c757d; /* Cinza moderno */
+    color: white; /* Texto branco */
+    border: none; /* Sem borda */
+    padding: 15px 30px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    font-family: 'Arial', sans-serif; /* Fonte moderna */
+    border-radius: 8px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transições suaves */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Efeito ao passar o mouse */
+.botao-reiniciar:hover {
+    background-color: #5a6268; /* Cinza mais escuro */
+    transform: translateY(-2px); /* Levanta o botão */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Sombra mais pronunciada */
+}
+
+/* Efeito ao clicar */
+.botao-reiniciar:active {
+    background-color: #495057; /* Cinza ainda mais escuro */
+    transform: translateY(0); /* Volta à posição original */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra reduzida */
+}
