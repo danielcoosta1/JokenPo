@@ -1,9 +1,9 @@
 <h1>Projeto DEVCLUB - Criação de página: Jogo Pedra/Papel/Tesoura</h1>
 <p>Projeto ficticio da plataforma DevClub</p>
 <p>Projeto com foco em exercitar conceitos JS: Construção de páginas dinâmicas no JavaScript</p>
-<p> Projeto com algumas alteraçõs autorais:
-    Botão reiniciar jogo;
-    Alert para comparar e ver quem ganhou o jogo, Alexa ou o usuário;
+<p> Projeto com algumas alteraçõs autorais: 
+    Botão reiniciar jogo;</br>
+    Alert para comparar e ver quem ganhou o jogo, Alexa ou o usuário; </br>
 </p>
 <h2>Linguagens usadas:</h2>
 <p>
