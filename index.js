@@ -26,6 +26,14 @@ function escolherAleatoria(var1, var2, var3) {
 
 
 function reiniciarJogo(){
+    if(pontuacaoAlexa>pontuacaoUsuario){
+        alert("Você perdeu para Alexa, quer ganhar?");
+    } 
+    else if(pontuacaoAlexa < pontuacaoUsuario) {
+        alert("Parabéns!!! Você ganhou de Alexa");
+    } else {
+        alert("Deu empate! Quer ganhar da alexa?")
+    }
     pontuacaoAlexa = 0;
     pontuacaoUsuario = 0;
     suaPontuacao.innerHTML = 0;
