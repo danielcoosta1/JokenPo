@@ -2,11 +2,12 @@
 <p>Projeto ficticio da plataforma DevClub</p>
 <p>Projeto com foco em exercitar conceitos JS: Construção de páginas dinâmicas no JavaScript</p>
 
-<p> Projeto com algumas alteraçõs autorais:</br>
-    - Botão reiniciar jogo;</br>
-    - Alert para comparar e ver quem ganhou o jogo, Alexa ou o usuário; </br>
-    </br>
-</p>
+<h2>Alterações próprias</h2>
+<p>Mudei e acrescentei algumas coisas do projeto original</p>
+<p>Acrescentei o botão reiniciar e sua dinâmica</p>
+<p>Acrescentei a informação de qual foi a escolha de Alexa(Aleatoria)</p>
+<p>Adicionei e fiz o meu próprio estilo no css, assim como a semântica do HTML</p>
+
 <h2>Linguagens usadas:</h2>
 <p>
  
@@ -18,4 +19,5 @@
 
 
 <h2>Projeto Desktop</h2>
-<img src="https://github.com/danielcoosta1/JokenPo/blob/main/assets/img/projeto__desktop.PNG?raw=true"> 
+<img src="https://github.com/danielcoosta1/JokenPo/blob/main/assets/img/desktop_ok2.PNG?raw=true"> 
+<img src="https://github.com/danielcoosta1/JokenPo/blob/main/assets/img/desktop_ok.PNG?raw=true"> 
